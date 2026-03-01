@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于",
+    "experience": "经历",
+    "projects": "项目",
+    "contact": "联系"
+  },
+  "hero": {
+    "greeting": "你好，我是",
+    "name": "Abdul Wasay",
+    "title": "软件工程师",
+    "description": "构建可扩展系统和AI驱动的解决方案。热衷于后端工程、云原生部署，以及将复杂问题转化为优雅的代码。",
+    "viewProjects": "查看项目",
+    "contactMe": "联系我"
+  },
+  "about": {
+    "title": "关于我",
+    "description": "一位充满热情的软件工程师，在软件开发和AI/ML领域拥有1年以上的实践经验。使用现代工具和云平台设计、构建和部署可扩展系统。热衷于通过简洁架构、自动化和智能系统解决现实问题。",
+    "skills": "技术技能",
+    "education": "教育",
+    "educationDetail": "NUST — 软件工程学士 — GPA: 3.65/4.00",
+    "categories": {
+      "languages": "编程语言",
+      "backend": "后端",
+      "frontend": "前端",
+      "databases": "数据库",
+      "devops": "DevOps与云",
+      "aiml": "AI / ML",
+      "tools": "工具"
+    }
+  },
+  "experience": {
+    "title": "工作经历",
+    "present": "至今",
+    "remote": "远程",
+    "jobs": [
+      {
+        "role": "初级软件工程师",
+        "description": "负责内部产品的全栈级别后端系统设计与开发。",
+        "achievements": [
+          "开发和维护与主要社交媒体API集成的后端服务",
+          "构建数据处理管道，高效地收集、存储和展示分析数据",
+          "使用 Kafka、Pusher、ClickHouse、MongoDB、Golang、Python AI Agents、Vue.js 和 PHP Laravel"
+        ]
+      },
+      {
+        "role": "软件工程师（合同）",
+        "description": "从事后端系统和自动化系统工作，以提高运营效率和可扩展性。",
+        "achievements": [
+          "为移动应用和模型服务开发和维护后端服务器",
+          "设计自动化系统，减少人工干预并改善响应时间",
+          "使用 n8n、数据抓取工具和 Python 后端构建自动化管道"
+        ]
+      },
+      {
+        "role": "深度学习工程师",
+        "description": "参与使用基础模型开发用于自动诊断的AI眼科模型。",
+        "achievements": [
+          "在3人团队中对大规模 JustRAIGS 青光眼数据集上的 RetFound 进行微调",
+          "将诊断准确率提高约18%，推理延迟降低约20%",
+          "改进模型架构以提高 10:1 不平衡数据集上的准确性",
+          "创建了用于嵌入式设备的轻量级先进模型"
+        ]
+      },
+      {
+        "role": "软件工程实习生",
+        "description": "协助开发用于自动化和智能响应系统的AI应用程序。",
+        "achievements": [
+          "与5人团队协作构建和维护全栈Web应用",
+          "在QA测试周期中帮助识别和解决10多个bug，提升产品稳定性",
+          "参与MERN栈应用开发"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "项目",
+    "viewCode": "查看代码",
+    "items": [
+      {
+        "title": "Medivise",
+        "description": "AI驱动的个性化医疗系统。微调了8B和70B的Llama 3模型，在医学基准测试中超越了GPT和Gemini模型。训练了13个CNN用于诊断。实现了结合患者病史的RAG，提供个性化的医疗建议。"
+      },
+      {
+        "title": "Dream Learning",
+        "description": "功能完善的学习管理应用。用户可以注册课程、参加测验和作业、获得证书、完成课程和购买优质内容。采用现代移动优先方式构建。"
+      }
+    ]
+  },
+  "contact": {
+    "title": "联系我",
+    "subtitle": "有项目想法或想合作？给我留言。",
+    "name": "姓名",
+    "email": "邮箱",
+    "message": "留言",
+    "send": "发送消息",
+    "success": "消息发送成功！我会尽快回复您。",
+    "namePlaceholder": "您的姓名",
+    "emailPlaceholder": "您的邮箱",
+    "messagePlaceholder": "告诉我您的项目...",
+    "errors": {
+      "nameRequired": "请输入姓名",
+      "emailRequired": "请输入邮箱",
+      "emailInvalid": "请输入有效的邮箱地址",
+      "messageRequired": "请输入留言内容"
+    }
+  },
+  "footer": {
+    "copyright": "Abdul Wasay。保留所有权利。",
+    "backToTop": "返回顶部"
+  },
+  "theme": {
+    "dark": "深色",
+    "light": "浅色"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Abdul Wasay",
+    "title": "Ingénieur Logiciel",
+    "description": "Construction de systèmes évolutifs et de solutions basées sur l'IA. Passionné par l'ingénierie backend, les déploiements cloud-native et la transformation de problèmes complexes en code élégant.",
+    "viewProjects": "Voir les Projets",
+    "contactMe": "Me Contacter"
+  },
+  "about": {
+    "title": "À Propos",
+    "description": "Ingénieur logiciel motivé avec plus d'1 an d'expérience pratique en développement logiciel et IA/ML. Je conçois, construis et déploie des systèmes évolutifs avec des outils modernes et des plateformes cloud. Passionné par la résolution de problèmes réels grâce à une architecture propre, l'automatisation et les systèmes intelligents.",
+    "skills": "Compétences Techniques",
+    "education": "Formation",
+    "educationDetail": "NUST — B.E. Génie Logiciel — CGPA: 3.65/4.00",
+    "categories": {
+      "languages": "Langages",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Bases de données",
+      "devops": "DevOps et Cloud",
+      "aiml": "IA / ML",
+      "tools": "Outils"
+    }
+  },
+  "experience": {
+    "title": "Expérience",
+    "present": "Présent",
+    "remote": "À distance",
+    "jobs": [
+      {
+        "role": "Ingénieur Logiciel Junior",
+        "description": "Responsable de la conception et du développement de systèmes backend pour un produit interne au niveau full stack.",
+        "achievements": [
+          "Développement et maintenance de services backend intégrés aux principales APIs de réseaux sociaux",
+          "Construction de pipelines de traitement de données pour collecter, stocker et exposer les analyses efficacement",
+          "Travail avec Kafka, Pusher, ClickHouse, MongoDB, Golang, Python AI Agents, Vue.js et PHP Laravel"
+        ]
+      },
+      {
+        "role": "Ingénieur Logiciel (Contrat)",
+        "description": "Travail sur les systèmes backend et d'automatisation pour améliorer l'efficacité opérationnelle et la scalabilité.",
+        "achievements": [
+          "Développement et maintenance de serveurs backend pour application mobile et service de modèles",
+          "Conception de systèmes automatisés, réduction de l'intervention manuelle et amélioration du temps de réponse",
+          "Construction de pipelines d'automatisation avec n8n, outils de scraping et backends Python"
+        ]
+      },
+      {
+        "role": "Ingénieur Deep Learning",
+        "description": "Contribution au développement de modèles d'ophtalmologie pilotés par l'IA utilisant des modèles fondamentaux pour le diagnostic automatisé.",
+        "achievements": [
+          "Affinage de RetFound sur le dataset de glaucome JustRAIGS à grande échelle dans une équipe de 3",
+          "Amélioration de la précision diagnostique de ~18% et réduction de la latence d'inférence de ~20%",
+          "Amélioration de l'architecture du modèle pour une meilleure précision sur un dataset déséquilibré 10:1",
+          "Création d'un modèle léger à la pointe de l'art pour l'utilisation sur des appareils embarqués"
+        ]
+      },
+      {
+        "role": "Stagiaire en Génie Logiciel",
+        "description": "Assistance au développement d'applications alimentées par l'IA pour l'automatisation et les systèmes de réponse intelligente.",
+        "achievements": [
+          "Collaboration avec une équipe de 5 pour construire et maintenir des applications web full-stack",
+          "Aide à l'identification et à la résolution de plus de 10 bugs lors des cycles de tests QA",
+          "Travail sur des applications MERN stack"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projets",
+    "viewCode": "Voir le Code",
+    "items": [
+      {
+        "title": "Medivise",
+        "description": "Système de santé personnalisé alimenté par l'IA. Affinage de modèles Llama 3 8B et 70B surpassant GPT et Gemini sur les benchmarks médicaux. Entraînement de 13 CNNs pour le diagnostic. Implémentation de RAG avec l'historique médical du patient pour des suggestions médicales personnalisées."
+      },
+      {
+        "title": "Dream Learning",
+        "description": "Application complète de gestion de l'apprentissage. Les utilisateurs peuvent s'inscrire à des cours, passer des quiz et devoirs, obtenir des certificats, terminer des cours et acheter du contenu premium."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Me Contacter",
+    "subtitle": "Un projet en tête ou envie de collaborer ? Envoyez-moi un message.",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer",
+    "success": "Message envoyé avec succès ! Je vous répondrai bientôt.",
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "votre@email.com",
+    "messagePlaceholder": "Parlez-moi de votre projet...",
+    "errors": {
+      "nameRequired": "Le nom est requis",
+      "emailRequired": "L'email est requis",
+      "emailInvalid": "Veuillez entrer un email valide",
+      "messageRequired": "Le message est requis"
+    }
+  },
+  "footer": {
+    "copyright": "Abdul Wasay. Tous droits réservés.",
+    "backToTop": "Retour en haut"
+  },
+  "theme": {
+    "dark": "Sombre",
+    "light": "Clair"
+  }
+}

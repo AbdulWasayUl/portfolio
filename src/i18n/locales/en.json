@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Abdul Wasay",
+    "title": "Software Engineer",
+    "description": "Building scalable systems and AI-driven solutions. Passionate about backend engineering, cloud-native deployments, and turning complex problems into elegant code.",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Driven software engineer with 1+ years of hands-on experience in software development and AI/ML. I design, build, and deploy scalable systems using modern tools and cloud platforms. Passionate about solving real-world problems through clean architecture, automation, and intelligent systems.",
+    "skills": "Technical Skills",
+    "education": "Education",
+    "educationDetail": "NUST — B.E. Software Engineering — CGPA: 3.65/4.00",
+    "categories": {
+      "languages": "Languages",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Databases",
+      "devops": "DevOps & Cloud",
+      "aiml": "AI / ML",
+      "tools": "Tools"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present",
+    "remote": "Remote",
+    "jobs": [
+      {
+        "role": "Junior Software Engineer",
+        "description": "Responsible for the design and development of backend systems for an in-house product on a full stack level.",
+        "achievements": [
+          "Developed and maintained backend services integrating with major social media APIs",
+          "Built data processing pipelines to collect, store, and expose analytics efficiently",
+          "Working with Kafka, Pusher, ClickHouse, MongoDB, Golang, Python AI Agents, Vue.js, and PHP Laravel"
+        ]
+      },
+      {
+        "role": "Software Engineer (Contract)",
+        "description": "Worked on backend systems and automation systems to enhance operational efficiency and scalability.",
+        "achievements": [
+          "Developed and maintained backend servers for mobile application and model serving",
+          "Designed automated systems, reducing manual intervention and improving response time",
+          "Built automation pipelines with n8n, data scraping tools, and Python backends"
+        ]
+      },
+      {
+        "role": "Deep Learning Engineer",
+        "description": "Contributed to the development of AI-driven ophthalmology models using foundation models for automated diagnosis.",
+        "achievements": [
+          "Fine-tuned RetFound on the large-scale JustRAIGS glaucoma dataset in a team of 3",
+          "Improved diagnostic accuracy by ~18% and reduced inference latency by ~20%",
+          "Enhanced model architecture for better accuracy on 10:1 imbalanced dataset",
+          "Created a lightweight state-of-the-art model for usage in embedded devices"
+        ]
+      },
+      {
+        "role": "Software Engineering Intern",
+        "description": "Assisted in the development of AI-powered applications for automation and intelligent response systems.",
+        "achievements": [
+          "Collaborated with a team of 5 to build and maintain full-stack web applications",
+          "Helped identify and resolve 10+ bugs during QA testing cycles, enhancing product stability",
+          "Worked on MERN stack applications"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "viewCode": "View Code",
+    "items": [
+      {
+        "title": "Medivise",
+        "description": "AI-enabled personalized healthcare system. Fine-tuned 8B and 70B Llama 3 models that outperformed GPT and Gemini models on medical benchmarks. Trained 13 CNNs for diagnosis. Implemented RAG with patient medical history for personalized, relevant medical suggestions."
+      },
+      {
+        "title": "Dream Learning",
+        "description": "A fully-fledged learning management application. Users can enroll in courses, take quizzes and assignments, earn certificates, complete courses, and purchase premium content. Built with a modern mobile-first approach."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind or want to collaborate? Drop me a message.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent successfully! I'll get back to you soon.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Tell me about your project...",
+    "errors": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "messageRequired": "Message is required"
+    }
+  },
+  "footer": {
+    "copyright": "Abdul Wasay. All rights reserved.",
+    "backToTop": "Back to top"
+  },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light"
+  }
+}

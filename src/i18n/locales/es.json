@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Abdul Wasay",
+    "title": "Ingeniero de Software",
+    "description": "Construyendo sistemas escalables y soluciones impulsadas por IA. Apasionado por la ingeniería backend, despliegues cloud-native y convertir problemas complejos en código elegante.",
+    "viewProjects": "Ver Proyectos",
+    "contactMe": "Contáctame"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Ingeniero de software motivado con más de 1 año de experiencia práctica en desarrollo de software e IA/ML. Diseño, construyo y despliego sistemas escalables utilizando herramientas modernas y plataformas en la nube. Apasionado por resolver problemas del mundo real mediante arquitectura limpia, automatización y sistemas inteligentes.",
+    "skills": "Habilidades Técnicas",
+    "education": "Educación",
+    "educationDetail": "NUST — Ing. en Software — CGPA: 3.65/4.00",
+    "categories": {
+      "languages": "Lenguajes",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Bases de Datos",
+      "devops": "DevOps y Cloud",
+      "aiml": "AI / ML",
+      "tools": "Herramientas"
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "present": "Presente",
+    "remote": "Remoto",
+    "jobs": [
+      {
+        "role": "Ingeniero de Software Junior",
+        "description": "Responsable del diseño y desarrollo de sistemas backend para un producto interno a nivel full stack.",
+        "achievements": [
+          "Desarrollé y mantuve servicios backend integrados con las principales APIs de redes sociales",
+          "Construí pipelines de procesamiento de datos para recopilar, almacenar y exponer analíticas eficientemente",
+          "Trabajo con Kafka, Pusher, ClickHouse, MongoDB, Golang, Python AI Agents, Vue.js y PHP Laravel"
+        ]
+      },
+      {
+        "role": "Ingeniero de Software (Contrato)",
+        "description": "Trabajé en sistemas backend y de automatización para mejorar la eficiencia operativa y escalabilidad.",
+        "achievements": [
+          "Desarrollé y mantuve servidores backend para aplicación móvil y servicio de modelos",
+          "Diseñé sistemas automatizados, reduciendo la intervención manual y mejorando el tiempo de respuesta",
+          "Construí pipelines de automatización con n8n, herramientas de scraping y backends en Python"
+        ]
+      },
+      {
+        "role": "Ingeniero de Deep Learning",
+        "description": "Contribuí al desarrollo de modelos de oftalmología impulsados por IA usando modelos fundacionales para diagnóstico automatizado.",
+        "achievements": [
+          "Ajusté RetFound en el dataset de glaucoma JustRAIGS a gran escala en un equipo de 3",
+          "Mejoré la precisión diagnóstica en ~18% y reduje la latencia de inferencia en ~20%",
+          "Mejoré la arquitectura del modelo para mayor precisión en dataset desbalanceado 10:1",
+          "Creé un modelo ligero de última generación para uso en dispositivos embebidos"
+        ]
+      },
+      {
+        "role": "Pasante de Ingeniería de Software",
+        "description": "Asistí en el desarrollo de aplicaciones impulsadas por IA para automatización y sistemas de respuesta inteligente.",
+        "achievements": [
+          "Colaboré con un equipo de 5 para construir y mantener aplicaciones web full-stack",
+          "Ayudé a identificar y resolver más de 10 bugs durante ciclos de pruebas QA",
+          "Trabajé en aplicaciones MERN stack"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "viewCode": "Ver Código",
+    "items": [
+      {
+        "title": "Medivise",
+        "description": "Sistema de salud personalizado habilitado por IA. Ajusté modelos Llama 3 de 8B y 70B que superaron a GPT y Gemini en benchmarks médicos. Entrené 13 CNNs para diagnóstico. Implementé RAG con historial médico del paciente para sugerencias médicas personalizadas."
+      },
+      {
+        "title": "Dream Learning",
+        "description": "Aplicación completa de gestión de aprendizaje. Los usuarios pueden inscribirse en cursos, realizar cuestionarios y tareas, obtener certificados, completar cursos y comprar contenido premium."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "¿Tienes un proyecto en mente o quieres colaborar? Envíame un mensaje.",
+    "name": "Nombre",
+    "email": "Correo",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "success": "¡Mensaje enviado exitosamente! Te responderé pronto.",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "tu@correo.com",
+    "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+    "errors": {
+      "nameRequired": "El nombre es obligatorio",
+      "emailRequired": "El correo es obligatorio",
+      "emailInvalid": "Por favor ingresa un correo válido",
+      "messageRequired": "El mensaje es obligatorio"
+    }
+  },
+  "footer": {
+    "copyright": "Abdul Wasay. Todos los derechos reservados.",
+    "backToTop": "Volver arriba"
+  },
+  "theme": {
+    "dark": "Oscuro",
+    "light": "Claro"
+  }
+}

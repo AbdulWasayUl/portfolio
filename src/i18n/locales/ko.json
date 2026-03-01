@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "홈",
+    "about": "소개",
+    "experience": "경력",
+    "projects": "프로젝트",
+    "contact": "연락처"
+  },
+  "hero": {
+    "greeting": "안녕하세요,",
+    "name": "Abdul Wasay",
+    "title": "소프트웨어 엔지니어",
+    "description": "확장 가능한 시스템과 AI 기반 솔루션을 구축합니다. 백엔드 엔지니어링, 클라우드 네이티브 배포, 복잡한 문제를 우아한 코드로 변환하는 데 열정을 가지고 있습니다.",
+    "viewProjects": "프로젝트 보기",
+    "contactMe": "연락하기"
+  },
+  "about": {
+    "title": "소개",
+    "description": "소프트웨어 개발과 AI/ML 분야에서 1년 이상의 실무 경험을 가진 열정적인 소프트웨어 엔지니어. 최신 도구와 클라우드 플랫폼을 사용하여 확장 가능한 시스템을 설계, 구축 및 배포합니다. 클린 아키텍처, 자동화 및 지능형 시스템을 통해 실제 문제를 해결하는 데 열정을 가지고 있습니다.",
+    "skills": "기술 스택",
+    "education": "학력",
+    "educationDetail": "NUST — 소프트웨어 공학 학사 — GPA: 3.65/4.00",
+    "categories": {
+      "languages": "프로그래밍 언어",
+      "backend": "백엔드",
+      "frontend": "프론트엔드",
+      "databases": "데이터베이스",
+      "devops": "DevOps & 클라우드",
+      "aiml": "AI / ML",
+      "tools": "도구"
+    }
+  },
+  "experience": {
+    "title": "경력",
+    "present": "현재",
+    "remote": "원격",
+    "jobs": [
+      {
+        "role": "주니어 소프트웨어 엔지니어",
+        "description": "사내 제품의 풀스택 수준 백엔드 시스템 설계 및 개발 담당.",
+        "achievements": [
+          "주요 소셜 미디어 API와 통합된 백엔드 서비스 개발 및 유지보수",
+          "데이터를 효율적으로 수집, 저장 및 노출하는 데이터 처리 파이프라인 구축",
+          "Kafka, Pusher, ClickHouse, MongoDB, Golang, Python AI Agents, Vue.js 및 PHP Laravel 사용"
+        ]
+      },
+      {
+        "role": "소프트웨어 엔지니어 (계약)",
+        "description": "운영 효율성과 확장성을 향상시키기 위한 백엔드 및 자동화 시스템 작업.",
+        "achievements": [
+          "모바일 애플리케이션 및 모델 서빙을 위한 백엔드 서버 개발 및 유지보수",
+          "수동 개입을 줄이고 응답 시간을 개선하는 자동화 시스템 설계",
+          "n8n, 데이터 스크래핑 도구 및 Python 백엔드로 자동화 파이프라인 구축"
+        ]
+      },
+      {
+        "role": "딥러닝 엔지니어",
+        "description": "자동 진단을 위한 파운데이션 모델을 활용한 AI 기반 안과 모델 개발에 기여.",
+        "achievements": [
+          "3인 팀에서 대규모 JustRAIGS 녹내장 데이터셋에 대한 RetFound 파인튜닝",
+          "진단 정확도 약 18% 향상 및 추론 지연시간 약 20% 감소",
+          "10:1 불균형 데이터셋에서의 정확도 향상을 위한 모델 아키텍처 개선",
+          "임베디드 장치용 경량 최첨단 모델 제작"
+        ]
+      },
+      {
+        "role": "소프트웨어 엔지니어링 인턴",
+        "description": "자동화 및 지능형 응답 시스템을 위한 AI 기반 애플리케이션 개발 지원.",
+        "achievements": [
+          "5인 팀과 협력하여 풀스택 웹 애플리케이션 구축 및 유지보수",
+          "QA 테스트 주기에서 10개 이상의 버그 식별 및 해결 지원",
+          "MERN 스택 애플리케이션 작업"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "프로젝트",
+    "viewCode": "코드 보기",
+    "items": [
+      {
+        "title": "Medivise",
+        "description": "AI 기반 개인화 의료 시스템. 의료 벤치마크에서 GPT와 Gemini를 능가하는 8B 및 70B Llama 3 모델 파인튜닝. 진단을 위한 13개 CNN 훈련. 환자 병력을 활용한 RAG로 개인화된 의료 제안 구현."
+      },
+      {
+        "title": "Dream Learning",
+        "description": "완전한 학습 관리 애플리케이션. 사용자는 코스에 등록하고, 퀴즈와 과제를 수행하고, 인증서를 획득하고, 코스를 완료하고, 프리미엄 콘텐츠를 구매할 수 있습니다."
+      }
+    ]
+  },
+  "contact": {
+    "title": "연락하기",
+    "subtitle": "프로젝트가 있거나 협업하고 싶으신가요? 메시지를 보내주세요.",
+    "name": "이름",
+    "email": "이메일",
+    "message": "메시지",
+    "send": "메시지 보내기",
+    "success": "메시지가 성공적으로 전송되었습니다! 곧 연락드리겠습니다.",
+    "namePlaceholder": "이름을 입력하세요",
+    "emailPlaceholder": "이메일을 입력하세요",
+    "messagePlaceholder": "프로젝트에 대해 알려주세요...",
+    "errors": {
+      "nameRequired": "이름은 필수입니다",
+      "emailRequired": "이메일은 필수입니다",
+      "emailInvalid": "유효한 이메일을 입력하세요",
+      "messageRequired": "메시지는 필수입니다"
+    }
+  },
+  "footer": {
+    "copyright": "Abdul Wasay. 모든 권리 보유.",
+    "backToTop": "맨 위로"
+  },
+  "theme": {
+    "dark": "다크",
+    "light": "라이트"
+  }
+}

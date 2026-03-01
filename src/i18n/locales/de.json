@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "name": "Abdul Wasay",
+    "title": "Softwareingenieur",
+    "description": "Aufbau skalierbarer Systeme und KI-gesteuerter Lösungen. Leidenschaftlich für Backend-Engineering, Cloud-native Deployments und die Umwandlung komplexer Probleme in eleganten Code.",
+    "viewProjects": "Projekte ansehen",
+    "contactMe": "Kontakt"
+  },
+  "about": {
+    "title": "Über Mich",
+    "description": "Motivierter Softwareingenieur mit über 1 Jahr praktischer Erfahrung in Softwareentwicklung und KI/ML. Ich entwerfe, baue und deploye skalierbare Systeme mit modernen Tools und Cloud-Plattformen. Leidenschaftlich daran interessiert, reale Probleme durch saubere Architektur, Automatisierung und intelligente Systeme zu lösen.",
+    "skills": "Technische Fähigkeiten",
+    "education": "Ausbildung",
+    "educationDetail": "NUST — B.E. Software Engineering — CGPA: 3.65/4.00",
+    "categories": {
+      "languages": "Sprachen",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Datenbanken",
+      "devops": "DevOps & Cloud",
+      "aiml": "KI / ML",
+      "tools": "Tools"
+    }
+  },
+  "experience": {
+    "title": "Erfahrung",
+    "present": "Aktuell",
+    "remote": "Remote",
+    "jobs": [
+      {
+        "role": "Junior Softwareingenieur",
+        "description": "Verantwortlich für das Design und die Entwicklung von Backend-Systemen für ein internes Produkt auf Full-Stack-Ebene.",
+        "achievements": [
+          "Entwicklung und Wartung von Backend-Services mit Integration der wichtigsten Social-Media-APIs",
+          "Aufbau von Datenverarbeitungspipelines zur effizienten Erfassung, Speicherung und Bereitstellung von Analysen",
+          "Arbeit mit Kafka, Pusher, ClickHouse, MongoDB, Golang, Python AI Agents, Vue.js und PHP Laravel"
+        ]
+      },
+      {
+        "role": "Softwareingenieur (Vertrag)",
+        "description": "Arbeit an Backend- und Automatisierungssystemen zur Verbesserung der betrieblichen Effizienz und Skalierbarkeit.",
+        "achievements": [
+          "Entwicklung und Wartung von Backend-Servern für mobile Anwendungen und Modell-Serving",
+          "Design automatisierter Systeme zur Reduzierung manueller Eingriffe und Verbesserung der Antwortzeit",
+          "Aufbau von Automatisierungspipelines mit n8n, Daten-Scraping-Tools und Python-Backends"
+        ]
+      },
+      {
+        "role": "Deep Learning Ingenieur",
+        "description": "Beitrag zur Entwicklung von KI-gesteuerten Ophthalmologie-Modellen unter Verwendung von Foundation-Modellen für automatisierte Diagnosen.",
+        "achievements": [
+          "Feinabstimmung von RetFound auf dem großen JustRAIGS-Glaukom-Datensatz in einem 3er-Team",
+          "Verbesserung der Diagnosegenauigkeit um ~18% und Reduzierung der Inferenzlatenz um ~20%",
+          "Verbesserung der Modellarchitektur für bessere Genauigkeit bei einem 10:1 unausgeglichenen Datensatz",
+          "Erstellung eines leichten, hochmodernen Modells für den Einsatz in eingebetteten Geräten"
+        ]
+      },
+      {
+        "role": "Praktikant Softwareentwicklung",
+        "description": "Unterstützung bei der Entwicklung von KI-gestützten Anwendungen für Automatisierung und intelligente Antwortsysteme.",
+        "achievements": [
+          "Zusammenarbeit mit einem 5er-Team zum Aufbau und zur Wartung von Full-Stack-Webanwendungen",
+          "Unterstützung bei der Identifizierung und Behebung von über 10 Bugs während QA-Testzyklen",
+          "Arbeit an MERN-Stack-Anwendungen"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projekte",
+    "viewCode": "Code ansehen",
+    "items": [
+      {
+        "title": "Medivise",
+        "description": "KI-gestütztes personalisiertes Gesundheitssystem. Feinabstimmung von 8B- und 70B-Llama-3-Modellen, die GPT und Gemini in medizinischen Benchmarks übertrafen. Training von 13 CNNs zur Diagnose. Implementierung von RAG mit Patientenhistorie für personalisierte medizinische Vorschläge."
+      },
+      {
+        "title": "Dream Learning",
+        "description": "Vollständige Lernmanagement-Anwendung. Benutzer können sich für Kurse einschreiben, Quizze und Aufgaben absolvieren, Zertifikate erhalten, Kurse abschließen und Premium-Inhalte kaufen."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Haben Sie ein Projekt im Sinn oder möchten zusammenarbeiten? Schreiben Sie mir.",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "success": "Nachricht erfolgreich gesendet! Ich melde mich bald bei Ihnen.",
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "ihre@email.com",
+    "messagePlaceholder": "Erzählen Sie mir von Ihrem Projekt...",
+    "errors": {
+      "nameRequired": "Name ist erforderlich",
+      "emailRequired": "E-Mail ist erforderlich",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail ein",
+      "messageRequired": "Nachricht ist erforderlich"
+    }
+  },
+  "footer": {
+    "copyright": "Abdul Wasay. Alle Rechte vorbehalten.",
+    "backToTop": "Nach oben"
+  },
+  "theme": {
+    "dark": "Dunkel",
+    "light": "Hell"
+  }
+}
