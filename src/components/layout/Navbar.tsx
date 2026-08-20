@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useTheme } from "@/components/ThemeProvider";
 import { useI18n } from "@/components/I18nProvider";
 import { LOCALE_NAMES, SUPPORTED_LOCALES, type Locale } from "@/i18n";
@@ -49,16 +49,39 @@ function GlobeIcon() {
 }
 
 export default function Navbar() {
+  const reduceMotion = useReducedMotion();
   const { theme, toggleTheme } = useTheme();
   const { locale, setLocale, t } = useI18n();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<(typeof navItems)[number]>("home");
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const ids = navItems.map((item) => (item === "home" ? "hero" : item));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (!visible) return;
+        setActiveSection(visible.target.id === "hero" ? "home" : visible.target.id as (typeof navItems)[number]);
+      },
+      { rootMargin: "-35% 0px -50% 0px", threshold: [0, 0.2, 0.5] }
+    );
+
+    ids.forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
@@ -87,15 +110,22 @@ export default function Navbar() {
   return (
     <>
       <motion.nav
-        initial={{ y: -100 }}
+        initial={reduceMotion ? false : { y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
         className={`fixed top-0 z-50 w-full transition-all duration-500 ${
           scrolled
-            ? "glass-strong shadow-lg shadow-black/10"
+            ? "nav-scrolled"
             : "bg-transparent"
         }`}
       >
+        <motion.span
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-px origin-center bg-gradient-to-r from-transparent via-neon-red/55 to-transparent shadow-[0_0_12px_rgba(255,23,68,0.28)]"
+          initial={false}
+          animate={{ opacity: scrolled ? 1 : 0, scaleX: scrolled ? 1 : 0.35 }}
+          transition={{ duration: reduceMotion ? 0 : 0.45, ease: [0.16, 1, 0.3, 1] }}
+        />
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
           {/* Logo */}
           <motion.button
@@ -109,14 +139,23 @@ export default function Navbar() {
           </motion.button>
 
           {/* Desktop nav */}
-          <div className="hidden items-center gap-1 md:flex">
+          <div className="hidden items-center gap-1 rounded-full border border-[var(--border-color)] bg-[var(--bg-card)]/50 p-1 backdrop-blur-md md:flex">
             {navItems.map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-[var(--text-secondary)] transition-all duration-300 hover:bg-neon-red/5 hover:text-neon-red"
+                className={`relative rounded-full px-3 py-1.5 text-xs font-medium transition-colors duration-300 ${
+                  activeSection === item ? "text-neon-red" : "text-[var(--text-secondary)] hover:text-neon-red"
+                }`}
               >
-                {navLabels[item]}
+                {activeSection === item && (
+                  <motion.span
+                    layoutId="active-nav"
+                    className="absolute inset-0 rounded-full border border-neon-red/20 bg-neon-red/[0.08]"
+                    transition={{ type: "spring", stiffness: 350, damping: 28 }}
+                  />
+                )}
+                <span className="relative z-10">{navLabels[item]}</span>
               </button>
             ))}
           </div>
@@ -184,7 +223,7 @@ export default function Navbar() {
               <AnimatePresence mode="wait">
                 <motion.div
                   key={theme}
-                  initial={{ rotate: -90, opacity: 0 }}
+                  initial={reduceMotion ? false : { rotate: -90, opacity: 0 }}
                   animate={{ rotate: 0, opacity: 1 }}
                   exit={{ rotate: 90, opacity: 0 }}
                   transition={{ duration: 0.2 }}

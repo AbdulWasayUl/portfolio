@@ -7,8 +7,14 @@ export interface Experience {
 }
 
 export interface Project {
+  title: string;
+  description: string;
+  category: "AI / ML" | "Backend" | "Full Stack" | "Product";
+  highlight: string;
   tech: string[];
-  github: string;
+  github?: string;
+  featured?: boolean;
+  status?: string;
 }
 
 export interface SocialLink {
@@ -50,12 +56,66 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
+    title: "Medivise",
+    description:
+      "An AI-enabled healthcare system combining medical RAG, fine-tuned Llama models, and computer-vision diagnostics for personalized patient guidance.",
+    category: "AI / ML",
+    highlight: "8B + 70B LLMs / 13 CNNs",
     tech: ["Python", "FastAPI", "Streamlit", "Firebase", "RAG", "PyTorch", "GCP", "TensorFlow"],
     github: "https://github.com/AbdulWasayUl/medivide-frontend",
+    featured: true,
   },
   {
+    title: "Dream Learning",
+    description:
+      "A mobile-first learning platform with courses, quizzes, assignments, certificates, and premium content backed by Firebase.",
+    category: "Product",
+    highlight: "End-to-end learning experience",
     tech: ["Flutter", "Firebase", "Dart", "Cloud Firestore"],
     github: "https://github.com/AbdulWasayUl/dream-learning",
+  },
+  {
+    title: "Sprintly",
+    description:
+      "A production-minded productivity workspace with real-time updates, drag-and-drop flows, rich-text editing, queues, caching, and a documented API.",
+    category: "Full Stack",
+    highlight: "Realtime + async workers",
+    tech: ["React", "TypeScript", "Express", "MongoDB", "Redis", "Pusher", "BullMQ"],
+    status: "Work in progress",
+  },
+  {
+    title: "Neural Style Transfer",
+    description:
+      "A transformer-based computer-vision pipeline for transferring visual styles across both images and video, with custom datasets plus dedicated training and inference workflows.",
+    category: "AI / ML",
+    highlight: "Image + video stylization",
+    tech: ["Python", "PyTorch", "Transformers", "Computer Vision", "CUDA", "Pillow"],
+    github: "https://github.com/AbdulWasayUl/style-transfer",
+  },
+];
+
+export const profileHighlights = [
+  { value: "2+", label: "Years building" },
+  { value: "18%", label: "Diagnostic lift" },
+  { value: "20%", label: "Latency reduced" },
+  { value: "3.65", label: "NUST CGPA" },
+];
+
+export const currentFocus = [
+  {
+    index: "01",
+    title: "Systems to experiences",
+    description: "Architecting the foundations and the interfaces people actually use.",
+  },
+  {
+    index: "02",
+    title: "Intelligence in the loop",
+    description: "Making AI useful inside reliable, measurable, production-ready products.",
+  },
+  {
+    index: "03",
+    title: "Build, ship, operate",
+    description: "Owning the path from system design and code to cloud delivery and scale.",
   },
 ];
 
@@ -77,7 +137,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "Email",
-    url: "mailto:wasay6788@gmail.com",
+    url: "mailto:abdul.wasay@wasay.dev",
     icon: "email",
   },
 ];
@@ -106,6 +166,10 @@ export const skillCategories = [
   {
     key: "aiml" as const,
     skills: ["PyTorch", "TensorFlow", "LangChain", "RAG", "Computer Vision", "NLP"],
+  },
+  {
+    key: "architecture" as const,
+    skills: ["System Design", "Microservices", "Event-Driven", "Distributed Systems", "Design Patterns"],
   },
   {
     key: "tools" as const,

@@ -70,6 +70,7 @@ export type TranslationKeys = {
       databases: string;
       devops: string;
       aiml: string;
+      architecture: string;
       tools: string;
     };
   };

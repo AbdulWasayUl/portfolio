@@ -10,13 +10,13 @@
     "greeting": "Hello, I'm",
     "name": "Abdul Wasay",
     "title": "Software Engineer",
-    "description": "Building scalable systems and AI-driven solutions. Passionate about backend engineering, cloud-native deployments, and turning complex problems into elegant code.",
+    "description": "I design and ship digital products end to end — from architecture and interfaces to AI systems, cloud infrastructure, and the automation connecting it all.",
     "viewProjects": "View Projects",
     "contactMe": "Contact Me"
   },
   "about": {
     "title": "About Me",
-    "description": "Driven software engineer with 1+ years of hands-on experience in software development and AI/ML. I design, build, and deploy scalable systems using modern tools and cloud platforms. Passionate about solving real-world problems through clean architecture, automation, and intelligent systems.",
+    "description": "Driven software engineer with 2+ years of hands-on experience in software development and AI/ML. I design, build, and deploy scalable systems using modern tools and cloud platforms. Passionate about solving real-world problems through clean architecture, automation, and intelligent systems.",
     "skills": "Technical Skills",
     "education": "Education",
     "educationDetail": "NUST — B.E. Software Engineering — CGPA: 3.65/4.00",
@@ -27,6 +27,7 @@
       "databases": "Databases",
       "devops": "DevOps & Cloud",
       "aiml": "AI / ML",
+      "architecture": "Architecture & Systems",
       "tools": "Tools"
     }
   },

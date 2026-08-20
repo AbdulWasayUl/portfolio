@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useI18n } from "@/components/I18nProvider";
 import { socialLinks } from "@/data/portfolio";
+import DirectionalArrow from "@/components/ui/DirectionalArrow";
 import SocialIcons from "@/components/ui/SocialIcons";
 
 export default function Footer() {
@@ -31,20 +32,7 @@ export default function Footer() {
           className="flex items-center gap-2 rounded-lg border border-[var(--border-color)] px-4 py-2 text-xs font-medium text-[var(--text-secondary)] transition-all hover:border-neon-red/40 hover:text-neon-red hover:shadow-[0_0_10px_rgba(255,23,68,0.15)]"
           aria-label={t.footer.backToTop}
         >
-          <svg
-            className="h-3 w-3"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4.5 15.75l7.5-7.5 7.5 7.5"
-            />
-          </svg>
+          <DirectionalArrow direction="up" className="h-[18px] w-[18px]" />
           {t.footer.backToTop}
         </motion.button>
       </div>

@@ -16,7 +16,7 @@
   },
   "about": {
     "title": "À Propos",
-    "description": "Ingénieur logiciel motivé avec plus d'1 an d'expérience pratique en développement logiciel et IA/ML. Je conçois, construis et déploie des systèmes évolutifs avec des outils modernes et des plateformes cloud. Passionné par la résolution de problèmes réels grâce à une architecture propre, l'automatisation et les systèmes intelligents.",
+    "description": "Ingénieur logiciel motivé avec plus de 2 ans d'expérience pratique en développement logiciel et IA/ML. Je conçois, construis et déploie des systèmes évolutifs avec des outils modernes et des plateformes cloud. Passionné par la résolution de problèmes réels grâce à une architecture propre, l'automatisation et les systèmes intelligents.",
     "skills": "Compétences Techniques",
     "education": "Formation",
     "educationDetail": "NUST — B.E. Génie Logiciel — CGPA: 3.65/4.00",
@@ -27,6 +27,7 @@
       "databases": "Bases de données",
       "devops": "DevOps et Cloud",
       "aiml": "IA / ML",
+      "architecture": "Architecture et systèmes",
       "tools": "Outils"
     }
   },

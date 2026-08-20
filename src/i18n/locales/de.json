@@ -16,7 +16,7 @@
   },
   "about": {
     "title": "Über Mich",
-    "description": "Motivierter Softwareingenieur mit über 1 Jahr praktischer Erfahrung in Softwareentwicklung und KI/ML. Ich entwerfe, baue und deploye skalierbare Systeme mit modernen Tools und Cloud-Plattformen. Leidenschaftlich daran interessiert, reale Probleme durch saubere Architektur, Automatisierung und intelligente Systeme zu lösen.",
+    "description": "Motivierter Softwareingenieur mit über 2 Jahren praktischer Erfahrung in Softwareentwicklung und KI/ML. Ich entwerfe, baue und deploye skalierbare Systeme mit modernen Tools und Cloud-Plattformen. Leidenschaftlich daran interessiert, reale Probleme durch saubere Architektur, Automatisierung und intelligente Systeme zu lösen.",
     "skills": "Technische Fähigkeiten",
     "education": "Ausbildung",
     "educationDetail": "NUST — B.E. Software Engineering — CGPA: 3.65/4.00",
@@ -27,6 +27,7 @@
       "databases": "Datenbanken",
       "devops": "DevOps & Cloud",
       "aiml": "KI / ML",
+      "architecture": "Architektur & Systeme",
       "tools": "Tools"
     }
   },

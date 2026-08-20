@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useI18n } from "@/components/I18nProvider";
 import SectionWrapper, { itemVariants } from "@/components/ui/SectionWrapper";
 import Button from "@/components/ui/Button";
+import LocalTimeWidget from "@/components/ui/LocalTimeWidget";
 
 interface FormErrors {
   name?: string;
@@ -60,12 +61,31 @@ export default function Contact() {
     <SectionWrapper id="contact" title={t.contact.title}>
       <motion.p
         variants={itemVariants}
-        className="mx-auto mb-10 max-w-lg text-center text-[var(--text-secondary)]"
+        className="mx-auto mb-8 max-w-lg text-center text-[var(--text-secondary)]"
       >
         {t.contact.subtitle}
       </motion.p>
 
-      <motion.div variants={itemVariants} className="mx-auto max-w-lg">
+      <motion.div
+        variants={itemVariants}
+        className="mx-auto mb-8 grid max-w-2xl gap-3 sm:grid-cols-3"
+      >
+        <a
+          href="mailto:abdul.wasay@wasay.dev"
+          className="spotlight-card glass group rounded-xl border border-[var(--border-color)] p-4 text-center transition-all hover:-translate-y-1 hover:border-neon-red/40"
+        >
+          <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-neon-red">Email</p>
+          <p className="mt-1 break-all text-xs text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] sm:text-[11px] lg:text-xs">abdul.wasay@wasay.dev</p>
+        </a>
+        <div className="spotlight-card glass rounded-xl border border-[var(--border-color)] p-4 text-center">
+          <LocalTimeWidget variant="time" />
+        </div>
+        <div className="spotlight-card glass rounded-xl border border-[var(--border-color)] p-4 text-center">
+          <LocalTimeWidget variant="status" />
+        </div>
+      </motion.div>
+
+      <motion.div variants={itemVariants} className="mx-auto max-w-2xl">
         <AnimatePresence mode="wait">
           {submitted ? (
             <motion.div
@@ -108,7 +128,7 @@ export default function Contact() {
               exit={{ opacity: 0 }}
               onSubmit={handleSubmit}
               noValidate
-              className="glass neon-border space-y-5 rounded-xl p-6 sm:p-8"
+              className="spotlight-card glass neon-border space-y-5 rounded-2xl p-6 sm:p-8"
             >
               {/* Name */}
               <div>
@@ -203,7 +223,7 @@ export default function Contact() {
                     className="h-4 w-4"
                     fill="none"
                     viewBox="0 0 24 24"
-                    strokeWidth={1.5}
+                    strokeWidth={2.2}
                     stroke="currentColor"
                     aria-hidden="true"
                   >

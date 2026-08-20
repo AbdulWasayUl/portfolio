@@ -12,7 +12,13 @@ export default function Experience() {
     <SectionWrapper id="experience" title={t.experience.title}>
       <div className="relative mx-auto max-w-3xl">
         {/* Timeline line */}
-        <div className="absolute start-6 top-0 bottom-0 hidden w-px bg-gradient-to-b from-neon-red/50 via-neon-red/20 to-transparent md:start-1/2 md:block" />
+        <motion.div
+          className="absolute start-6 top-0 bottom-0 hidden w-px origin-top bg-gradient-to-b from-neon-red/70 via-neon-red/25 to-transparent md:start-1/2 md:block"
+          initial={{ scaleY: 0 }}
+          whileInView={{ scaleY: 1 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
+        />
 
         {experiences.map((exp, index) => {
           const job = t.experience.jobs[index];
@@ -46,9 +52,15 @@ export default function Experience() {
                 }`}
               >
                 <motion.div
-                  whileHover={{ y: -4, transition: { duration: 0.25 } }}
-                  className="glass neon-border rounded-xl p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,23,68,0.12)]"
+                  whileHover={{ y: -6, scale: 1.01, transition: { duration: 0.25 } }}
+                  className="spotlight-card glass neon-border relative overflow-hidden rounded-xl p-6 transition-all duration-300 hover:shadow-[0_20px_55px_rgba(255,23,68,0.1)]"
                 >
+                  <div className="mb-4 flex items-center gap-3" aria-hidden="true">
+                    <span className="flex h-8 min-w-8 items-center justify-center rounded-lg border border-neon-red/25 bg-neon-red/[0.07] font-mono text-[10px] font-bold tracking-wider text-neon-red">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <span className="h-px flex-1 bg-gradient-to-r from-neon-red/30 to-transparent" />
+                  </div>
                   {/* Header */}
                   <div className="mb-3 flex flex-wrap items-start justify-between gap-2">
                     <div>

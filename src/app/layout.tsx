@@ -19,13 +19,15 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Abdul Wasay — Software Engineer",
   description:
-    "Portfolio of Abdul Wasay — Software Engineer specializing in backend engineering, scalable systems, AI/ML, and cloud-native deployments.",
+    "Portfolio of Abdul Wasay — a full-spectrum software engineer working across system design, full-stack products, AI, automation, and cloud infrastructure.",
   keywords: [
     "Abdul Wasay",
     "Software Engineer",
+    "System Design",
     "Backend Developer",
     "Full Stack",
     "AI Engineer",
+    "DevOps",
     "Portfolio",
     "Go",
     "Python",
@@ -38,14 +40,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     title: "Abdul Wasay — Software Engineer",
     description:
-      "Building scalable systems and AI-driven solutions. Backend engineering, cloud-native deployments, and elegant code.",
+      "Designing and shipping products end to end across systems, interfaces, AI, automation, and cloud infrastructure.",
     siteName: "Abdul Wasay Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Abdul Wasay — Software Engineer",
     description:
-      "Building scalable systems and AI-driven solutions. Backend engineering, cloud-native deployments, and elegant code.",
+      "Designing and shipping products end to end across systems, interfaces, AI, automation, and cloud infrastructure.",
   },
   robots: {
     index: true,

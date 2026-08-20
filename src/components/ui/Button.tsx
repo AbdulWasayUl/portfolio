@@ -22,7 +22,7 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const baseClasses =
-    "relative inline-flex items-center justify-center gap-2 font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-neon-red/50 focus:ring-offset-2 focus:ring-offset-dark-900 disabled:opacity-50 disabled:cursor-not-allowed";
+    "btn-neon relative isolate inline-flex items-center justify-center gap-2 overflow-hidden font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-neon-red/50 focus:ring-offset-2 focus:ring-offset-dark-900 disabled:opacity-50 disabled:cursor-not-allowed";
 
   const variants = {
     primary: cn(
@@ -49,10 +49,10 @@ export default function Button({
   const classes = cn(baseClasses, variants[variant], sizes[size], className);
 
   const content = (
-    <>
+    <span className="relative z-10 inline-flex items-center gap-2">
       {icon && <span className="shrink-0">{icon}</span>}
       {children}
-    </>
+    </span>
   );
 
   if (href) {
@@ -60,7 +60,7 @@ export default function Button({
       <motion.a
         href={href}
         className={classes}
-        whileHover={{ scale: 1.02 }}
+        whileHover={{ scale: 1.03, y: -2 }}
         whileTap={{ scale: 0.98 }}
         target={href.startsWith("http") ? "_blank" : undefined}
         rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
@@ -73,7 +73,7 @@ export default function Button({
   return (
     <motion.button
       className={classes}
-      whileHover={{ scale: 1.02 }}
+      whileHover={{ scale: 1.03, y: -2 }}
       whileTap={{ scale: 0.98 }}
       {...(props as Record<string, unknown>)}
     >
